@@ -303,6 +303,9 @@ h3 {
 .section_3_text::before {
    content: '•  ';
 }
+.svg_white {
+   fill:#fff;
+}
 .section_4 {
    max-width: 1440px;
    width: 100%;
