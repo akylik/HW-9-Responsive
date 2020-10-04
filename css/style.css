@@ -139,7 +139,7 @@ h1 {
    display: flex;
    margin-top: 50px;
    margin-bottom: 60px;
-   justify-content: space-between;
+   justify-content: space-evenly;
 }
 .button {
    width: 157px;
