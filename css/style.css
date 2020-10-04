@@ -1,50 +1,91 @@
 /*Обнуление*/
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
 }
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-nav,footer,header,aside{display: block;}
-
-html, body {
-	/* min-height: 100% !important; */
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+:focus,
+:active {
+   outline: none;
+}
+a:focus,
+a:active {
+   outline: none;
 }
 
-input,button,textarea{font-family:inherit;}
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
 
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
+html,
+body {
+   /* min-height: 100% !important; */
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
 
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+button {
+   cursor: pointer;
+}
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+ul li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
 /*--------------------*/
 header {
    max-width: 1440px;
    width: 100%;
    margin: 0 auto;
-   background: #F4F6F9;
+   background: #f4f6f9;
    display: flex;
    align-items: center;
-
 }
 .header_content {
    flex-basis: 45.14%;
@@ -58,16 +99,16 @@ header {
    /* margin-top: 61px; */
 }
 .header_logo a {
-   font-family: 'Product Sans';
+   font-family: "Product Sans";
    font-size: 24px;
    line-height: 29px;
    font-weight: 800;
-   color: #5282F0;
+   color: #5282f0;
    position: relative;
    padding-left: 30px;
 }
 .header_logo a::before {
-   content: '';
+   content: "";
    position: absolute;
    background: url(../img/icons/football_white.svg);
    left: 0;
@@ -80,14 +121,14 @@ header {
    min-width: 360px;
 }
 .header_text p {
-   font-family: 'Lato';
+   font-family: "Lato";
    font-size: 18px;
    line-height: 26px;
-   color: #4F4F4F;
+   color: #4f4f4f;
    margin-top: 30px;
 }
 h1 {
-   font-family: 'Lato';
+   font-family: "Lato";
    font-weight: bold;
    font-size: 36px;
    line-height: 48px;
@@ -98,6 +139,7 @@ h1 {
    display: flex;
    margin-top: 50px;
    margin-bottom: 60px;
+   justify-content: space-between;
 }
 .button {
    width: 157px;
@@ -105,21 +147,21 @@ h1 {
    background: #000000;
    border-radius: 7.33503px;
 }
-.button:first-child {
+/* .button:first-child {
    margin-right: 35px;
-}
+} */
 .subtitle_but {
    display: block;
-   font-family: 'Roboto';
+   font-family: "Roboto";
    font-size: 10px;
    line-height: 12px;
-   color: #FFFFFF;
+   color: #ffffff;
    text-align: left;
    padding-left: 45px;
    position: relative;
 }
 .but_apple::before {
-   content: '';
+   content: "";
    position: absolute;
    background: url(../img/icons/logo_apple.svg);
    left: 7px;
@@ -128,7 +170,7 @@ h1 {
    height: 31px;
 }
 .but_google::before {
-   content: '';
+   content: "";
    position: absolute;
    background: url(../img/icons/logo_playmarket.svg);
    left: 7px;
@@ -138,20 +180,20 @@ h1 {
 }
 .title_but {
    display: inline-block;
-   font-family: 'Roboto';
+   font-family: "Roboto";
    font-weight: 500;
    font-size: 21.2716px;
    line-height: 25px;
-   color: #FFFFFF;
+   color: #ffffff;
    text-align: left;
    padding-left: 30px;
 }
 .text_but {
    display: inline-block;
-   font-family: 'Roboto';
+   font-family: "Roboto";
    font-weight: 300;
    font-size: 17.6041px;
-   color: #FFFFFF;
+   color: #ffffff;
    margin-left: 3px;
    position: relative;
    top: 0px;
@@ -161,7 +203,7 @@ h1 {
    z-index: 0;
    flex-shrink: 1;
    position: relative;
-   top: 0px; 
+   top: 0px;
 }
 .img_cont {
    width: 100%;
@@ -184,8 +226,8 @@ h1 {
    flex-basis: 55.9%;
    flex-shrink: 1;
    flex-grow: 0;
-   background: #FFFFFF;
-   }
+   background: #ffffff;
+}
 .section_1_img img {
    width: 100%;
    object-fit: contain;
@@ -198,19 +240,19 @@ h1 {
    flex-grow: 0;
    max-width: 505px;
    padding-top: 3%;
-    padding-right: 3%;
-    padding-left: 3%;
+   padding-right: 3%;
+   padding-left: 3%;
 }
 
 .section_link {
-   font-family: 'Lato';
+   font-family: "Lato";
    font-weight: bold;
    font-size: 16px;
    line-height: 21px;
-   color: #00ADEE;
+   color: #00adee;
 }
 h2 {
-   font-family: 'Lato';
+   font-family: "Lato";
    font-weight: bold;
    font-size: 28px;
    line-height: 37px;
@@ -218,25 +260,25 @@ h2 {
    margin-top: 25px;
 }
 .section_text {
-   font-family: 'Lato';
+   font-family: "Lato";
    font-size: 16px;
    line-height: 23px;
-   color: #4F4F4F;
+   color: #4f4f4f;
    padding-top: 25px;
 }
 .button_link {
-   font-family: 'Lato';
+   font-family: "Lato";
    font-weight: bold;
    font-size: 16px;
    line-height: 21px;
-   color: #00ADEE;
+   color: #00adee;
    background-color: transparent;
    margin-top: 22px;
 }
 .section_2 {
    max-width: 1440px;
    width: 100%;
-    margin: 0 auto;
+   margin: 0 auto;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -259,6 +301,9 @@ h2 {
    margin-right: 4%;
 }
 .section_2_img img {
+   display: none;
+}
+.section_2_img img {
    width: 100%;
    object-fit: contain;
    object-position: center;
@@ -276,11 +321,11 @@ h2 {
    padding: 4% 0;
 }
 h3 {
-   font-family: 'Lato';
+   font-family: "Lato";
    font-weight: bold;
    font-size: 28px;
    line-height: 37px;
-   color: #FFFFFF;
+   color: #ffffff;
    text-align: center;
 }
 .section_3_main {
@@ -295,16 +340,16 @@ h3 {
    margin-top: 45px;
 }
 .section_3_text {
-   font-family: 'Lato';
+   font-family: "Lato";
    font-size: 16px;
    line-height: 23px;
-   color: #FFFFFF;
+   color: #ffffff;
 }
 .section_3_text::before {
-   content: '•  ';
+   content: "•  ";
 }
 .svg_white {
-   fill:#fff;
+   fill: #fff;
 }
 .section_4 {
    max-width: 1440px;
@@ -325,7 +370,7 @@ h3 {
    flex-shrink: 0;
    max-width: 309px;
    height: 161px;
-   background: #FFFFFF;
+   background: #ffffff;
    border: 1px solid #828282;
    border-radius: 4px;
    padding-left: 13px;
@@ -341,7 +386,7 @@ h3 {
    margin-right: auto;
 }
 .section_4_profile {
-   font-family: 'Lato';
+   font-family: "Lato";
    font-weight: bold;
    font-size: 16px;
    line-height: 29px;
@@ -350,10 +395,10 @@ h3 {
 .section_4_text {
 }
 .section_4_text p {
-   font-family: 'Lato';
+   font-family: "Lato";
    font-size: 14px;
    line-height: 18px;
-   color: #4F4F4F;
+   color: #4f4f4f;
    text-align: justify;
    margin-top: 18px;
 }
@@ -371,19 +416,18 @@ h3 {
    margin: 50px 0;
 }
 .section_5 {
-   background: #FAFAFA;
+   background: #fafafa;
    max-width: 1440px;
    width: 100%;
    margin: 0 auto;
    text-align: center;
    padding-top: 2%;
-   padding-bottom: 2%
+   padding-bottom: 2%;
 }
 .section_5_item {
    margin-top: 58px;
    margin-bottom: 60px;
    padding: 0 10%;
-   
 }
 .section_5_item ul {
    display: flex;
@@ -404,7 +448,7 @@ h3 {
    flex-basis: 55.9%;
    flex-shrink: 1;
    flex-grow: 0;
-   background: #FFFFFF;
+   background: #ffffff;
 }
 .section_6_img img {
    width: 100%;
@@ -424,7 +468,7 @@ h3 {
    max-width: 1440px;
    width: 100%;
    margin: 0 auto;
-   background: #00ADEE;
+   background: #00adee;
 }
 .footer_wrapper {
    max-width: 1120px;
@@ -435,16 +479,16 @@ h3 {
    align-items: center;
 }
 .footer_logo a {
-   font-family: 'Product Sans';
+   font-family: "Product Sans";
    font-size: 24px;
    line-height: 29px;
    letter-spacing: -0.02em;
-   color: #FFFFFF;
+   color: #ffffff;
    position: relative;
    padding-left: 30px;
 }
 .footer_logo a::before {
-   content: '';
+   content: "";
    position: absolute;
    background: url(../img/icons/football_blue.svg);
    left: 0;
@@ -459,15 +503,213 @@ h3 {
    padding: 0 8px;
 }
 .footer_link ul li a {
-   font-family: 'Lato';
+   font-family: "Lato";
    font-weight: bold;
    font-size: 16px;
    line-height: 21px;
-   color: #FFFFFF;
+   color: #ffffff;
 }
 .footer_social ul {
    display: flex;
 }
 .footer_social ul li {
    padding: 0 8px;
+}
+
+/*================== 720px======================*/
+
+@media only screen and (max-width: 720px) {
+   header {
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+   }
+   .header_content {
+      flex-basis: 100%;
+      flex-shrink: 0;
+      padding-left: 0;
+      padding-top: 6%;
+   }
+   .header_img {
+      display: none;
+   }
+   .header_text {
+      margin-top: 10%;
+   }
+   .header_link {
+      justify-content: space-evenly;
+   }
+   .section_1 {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+   }
+   .section_1_info {
+      flex-basis: 100%;
+      padding: 3%;
+      max-width: 100%;
+   }
+   .section_1_img {
+      flex-basis: 100%;
+      flex-shrink: 1;
+   }
+   .section_1_img img {
+      width: 100%;
+      flex-shrink: 1;
+      object-fit: contain;
+      object-position: center;
+   }
+   .section_2 {
+      background-image: none;
+      flex-direction: column;
+   }
+   .section_2_img img {
+      display: block;
+   }
+   .section_2_info {
+      max-width: 100%;
+      padding: 0 20px;
+      text-align: center;
+   }
+   .section_2_img {
+      margin-right: 0;
+   }
+   .section_3_main {
+      flex-direction: column;
+   }
+   .section_3_box {
+      text-align: center;
+   }
+   .section_3 {
+      background-image: none;
+   }
+   .svg_white {
+      fill: #00adee;
+   }
+   h3 {
+      color: #333333;
+   }
+   .section_3_text {
+      color: #4f4f4f;
+   }
+   .section_3_text::before {
+      content: "";
+   }
+   .img_none {
+      display: none;
+   }
+   .section_4_slider {
+      overflow: hidden;
+   }
+   .section_4_card:nth-of-type(1) {
+      display: none;
+   }
+   .section_4_card:nth-of-type(3) {
+      display: none;
+   }
+   .section_5_item ul li a {
+      display: block;
+      padding: 10px;
+   }
+   .section_6 {
+      flex-direction: column-reverse;
+   }
+   .section_6_info {
+      max-width: 100%;
+      text-align: center;
+   }
+   .footer_wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+   }
+   .footer_link ul li a {
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 30px;
+   }
+   .footer_social ul li a {
+      display: block;
+      padding-top: 10px;
+   }
+   .footer_link {
+      order: 3;
+   }
+   .footer_logo {
+      padding-left: 8px;
+   }
+}
+
+/*================== 360px======================*/
+
+@media only screen and (max-width: 390px) {
+   header {
+      max-width: 390px;
+   }
+   h1 {
+      font-size: 30px;
+      line-height: 40px;
+   }
+   .header_text p {
+      font-size: 16px;
+      line-height: 23px;
+   }
+   .header_link {
+      display: flex;
+      margin-top: 40px;
+      margin-bottom: 50px;
+   }
+   .button {
+      width: 135px;
+      height: 44px;
+      background: #000000;
+      border-radius: 7px;
+   }
+   .subtitle_but {
+      font-size: 9px;
+      line-height: 11px;
+      padding-left: 38px;
+   }
+   .but_apple::before {
+      background: url(../img/icons/logo_apple_380.svg);
+      left: 5px;
+      top: 1px;
+      width: 24px;
+      height: 30px;
+   }
+   .header_text {
+      min-width: 100%;
+   }
+   .title_but {
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 23px;
+      padding-left: 28px;
+   }
+   .but_google::before {
+      background: url(../img/icons/play_market_380.svg);
+      left: 5px;
+      top: 3px;
+      width: 25px;
+      height: 28px;
+   }
+   .text_but {
+      font-size: 16px;
+      margin-left: 3px;
+      top: 0px;
+   }
+   .section_4_left {
+      display: none;
+   }
+   .footer_link ul li {
+      padding: 0 2%;
+   }
+   .footer_link ul li a {
+      display: block;
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
+   .footer_logo {
+      padding-top: 25px;
+   }
 }
